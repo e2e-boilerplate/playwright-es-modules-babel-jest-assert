@@ -1,7 +1,7 @@
 {
-  "name": "puppeteer-es6modules-babel-jest-assert",
+  "name": "playwright-es6modules-babel-jest-assert",
   "version": "1.0.0",
-  "description": "Puppeteer end-to-end test automation boilerplate project. Using ES6 modules, babel and jest.",
+  "description": "Playwright end-to-end test automation boilerplate project. Using ES6 modules, BabelJS, Jest and Assert.",
   "scripts": {
     "test": "jest",
     "lint": "npx eslint --ext .js ./ --fix"
@@ -30,8 +30,8 @@
     "husky": "4.2.3",
     "jest": "25.1.0",
     "prettier": "1.19.1",
-    "pretty-quick": "2.0.1",
-    "puppeteer": "2.1.1"
+    "playwright": "0.10.0",
+    "pretty-quick": "2.0.1"
   },
   "husky": {
     "hooks": {

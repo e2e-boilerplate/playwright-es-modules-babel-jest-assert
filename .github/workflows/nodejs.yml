@@ -1,29 +1,33 @@
-name: puppeteer-es6-modules-babeljs-jest-assert
+name: playwright-es6-modules-babeljs-jest-assert
 
-on: 
+on:
   push:
   schedule:
-    - cron: '0 0 2-30/2 * *'
+    - cron: "0 0 2-30/2 * *"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-    - name: INSTALL 
-      run: |
-        npm ci
-      env:
-        CI: true
-    - name: LINT
-      run: |
-        npm run lint
-    - name: TESTS
-      run: |
-        npm run test
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: install required packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install libgbm-dev
+          sudo apt-get install xvfb
+      - name: INSTALL
+        run: |
+          npm ci
+        env:
+          CI: true
+      - name: LINT
+        run: |
+          npm run lint
+      - name: TESTS
+        run: |
+          npm run test

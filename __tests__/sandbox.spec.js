@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer";
+import { chromium } from "playwright";
 import assert from "assert";
 
 let page;
@@ -7,10 +7,11 @@ let browser;
 describe("Sandbox", () => {
   beforeAll(async () => {
     browser = process.env.GITHUB_ACTIONS
-      ? await puppeteer.launch()
-      : await puppeteer.launch({ headless: false });
+      ? await chromium.launch()
+      : await chromium.launch({ headless: false });
 
-    page = await browser.newPage();
+    const context = await browser.newContext();
+    page = await context.newPage();
 
     await page
       .goto("https://e2e-boilerplates.github.io/sandbox/", {
@@ -28,7 +29,7 @@ describe("Sandbox", () => {
 
   test("should be on the sandbox", async () => {
     await page.waitFor("h1");
-    const title = await page.$eval("h1", (el) => {
+    const title = await page.$eval("h1", el => {
       return el.textContent;
     });
 
