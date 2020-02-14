@@ -9,9 +9,14 @@ describe("Sandbox", () => {
     browser = process.env.GITHUB_ACTIONS
       ? await chromium.launch()
       : await chromium.launch({ headless: false });
-
     const context = await browser.newContext();
     page = await context.newPage();
+
+    await page
+      .goto("https://e2e-boilerplates.github.io/sandbox/", {
+        waitUntil: "networkidle0"
+      })
+      .catch(() => {});
   });
 
   afterAll(() => {
@@ -21,13 +26,6 @@ describe("Sandbox", () => {
   });
 
   test("should be on the sandbox", async () => {
-    await page
-      .goto("https://e2e-boilerplates.github.io/sandbox/", {
-        waitUntil: "networkidle0"
-      })
-      // tslint:disable-next-line:no-empty
-      .catch(() => {});
-
     await page.waitFor("h1");
     const title = await page.$eval("h1", el => el.textContent);
 
