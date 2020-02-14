@@ -1,0 +1,41 @@
+{
+  "name": "puppeteer-es6modules-babel-jest-assert",
+  "version": "1.0.0",
+  "description": "Puppeteer end-to-end test automation boilerplate project. Using ES6 modules, babel and jest.",
+  "scripts": {
+    "test": "jest",
+    "lint": "npx eslint --ext .js ./ --fix"
+  },
+  "keywords": [
+    "puppeteer",
+    "es6 modules",
+    "babel",
+    "jest",
+    "boilerplate",
+    "example"
+  ],
+  "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/plugin-transform-runtime": "7.8.3",
+    "@babel/preset-env": "7.8.4",
+    "@babel/runtime": "7.8.4",
+    "babel-jest": "25.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "4.2.3",
+    "jest": "25.1.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "2.0.1",
+    "puppeteer": "2.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
