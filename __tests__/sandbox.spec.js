@@ -29,9 +29,7 @@ describe("Sandbox", () => {
 
   test("should be on the sandbox", async () => {
     await page.waitFor("h1");
-    const title = await page.$eval("h1", el => {
-      return el.textContent;
-    });
+    const title = await page.$eval("h1", el => el.textContent);
 
     assert.strictEqual(await page.title(), "Sandbox");
     assert.strictEqual(title, "Sandbox");
