@@ -9,8 +9,7 @@ describe("Sandbox", () => {
     browser = process.env.GITHUB_ACTIONS
       ? await chromium.launch()
       : await chromium.launch({ headless: false });
-    const context = await browser.newContext();
-    page = await context.newPage();
+    page = await browser.newPage();
 
     await page
       .goto("https://e2e-boilerplates.github.io/sandbox/", {
