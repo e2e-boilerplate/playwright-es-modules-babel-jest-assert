@@ -1,23 +1,6 @@
 {
-  "name": "playwright-es6-modules-babel-jest-assert",
-  "version": "1.0.0",
-  "description": "Playwright end-to-end test automation boilerplate, using ES6 modules, BabelJS, Jest and Assert.",
-  "scripts": {
-    "lint": "npx eslint --ext .js ./ --fix",
-    "test": "jest"
-  },
-  "keywords": [
-    "puppeteer",
-    "es6 modules",
-    "babel",
-    "jest",
-    "boilerplate",
-    "example",
-    "e2e",
-    "e2e test"
-  ],
   "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
-  "license": "MIT",
+  "description": "Playwright end-to-end test automation boilerplate, using ES6 modules, BabelJS, Jest and Assert.",
   "devDependencies": {
     "@babel/core": "7.8.4",
     "@babel/plugin-transform-runtime": "7.8.3",
@@ -28,16 +11,40 @@
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-json": "^2.1.0",
     "eslint-plugin-prettier": "3.1.2",
     "husky": "4.2.3",
     "jest": "25.1.0",
-    "prettier": "1.19.1",
     "playwright": "0.11.1",
+    "prettier": "1.19.1",
     "pretty-quick": "2.0.1"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  }
+  },
+  "keywords": [
+    "assert",
+    "babeljs",
+    "boilerplate",
+    "e2e",
+    "e2e tests",
+    "es6",
+    "example",
+    "integration test",
+    "jest",
+    "playwright"
+  ],
+  "license": "MIT",
+  "name": "playwright-es6-modules-babeljs-jest-assert",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplates/playwright-es6-modules-babeljs-jest-assert.git"
+  },
+  "scripts": {
+    "lint": "npx eslint --ext .js ./ --fix",
+    "test": "jest"
+  },
+  "version": "1.0.0"
 }
