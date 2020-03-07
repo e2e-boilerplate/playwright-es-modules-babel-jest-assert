@@ -28,7 +28,6 @@
     "assert",
     "babeljs",
     "es modules",
-    "es6",
     "jest",
     "playwright"
   ],
