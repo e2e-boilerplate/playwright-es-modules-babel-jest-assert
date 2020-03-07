@@ -27,15 +27,15 @@
   "keywords": [
     "assert",
     "babeljs",
-    "es modules",
+    "es",
     "jest",
     "playwright"
   ],
   "license": "MIT",
-  "name": "playwright-es6-modules-babeljs-jest-assert",
+  "name": "playwright-es-modules-babeljs-jest-assert",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/e2e-boilerplates/playwright-es6-modules-babeljs-jest-assert.git"
+    "url": "git+https://github.com/e2e-boilerplates/playwright-es-modules-babeljs-jest-assert.git"
   },
   "scripts": {
     "lint": "npx eslint --ext .js ./ --fix",
