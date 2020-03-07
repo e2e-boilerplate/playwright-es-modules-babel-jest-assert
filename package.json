@@ -1,5 +1,5 @@
 {
-  "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
+  "author": "",
   "description": "Playwright end-to-end test automation boilerplate, using ES6 modules, BabelJS, Jest and Assert.",
   "devDependencies": {
     "@babel/core": "7.8.6",
@@ -27,12 +27,8 @@
   "keywords": [
     "assert",
     "babeljs",
-    "boilerplate",
-    "e2e",
-    "e2e tests",
+    "es Modules",
     "es6",
-    "example",
-    "integration test",
     "jest",
     "playwright"
   ],
