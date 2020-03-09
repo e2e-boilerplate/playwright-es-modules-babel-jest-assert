@@ -1,9 +1,9 @@
 {
-  "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
+  "author": "",
   "bugs": {
     "url": "https://github.com/e2e-boilerplate/playwright-es-modules-babel-jest-assert/issues"
   },
-  "description": "Playwright end-to-end test automation boilerplate. Using Using ES Modules, Babel, Jest and Assert.",
+  "description": "Playwright end-to-end test automation boilerplate. using ES Modules, Babel, Jest and Assert.",
   "devDependencies": {
     "@babel/core": "7.8.7",
     "@babel/plugin-transform-runtime": "7.8.3",
@@ -31,11 +31,6 @@
   "keywords": [
     "assert",
     "babel",
-    "boilerplate",
-    "e2e",
-    "e2e tests",
-    "example",
-    "integration test",
     "jest",
     "playwright"
   ],
