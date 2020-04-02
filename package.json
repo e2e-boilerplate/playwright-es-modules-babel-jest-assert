@@ -29,7 +29,7 @@
   "homepage": "https://github.com/e2e-boilerplate/playwright-es-modules-babel-jest-assert#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "lint-staged"
     }
   },
   "keywords": [
@@ -44,6 +44,11 @@
     "playwright"
   ],
   "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ]
+  },
   "name": "playwright-es-modules-babel-jest-assert",
   "repository": {
     "type": "git",
