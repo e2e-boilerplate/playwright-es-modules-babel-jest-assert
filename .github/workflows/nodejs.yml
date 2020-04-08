@@ -2,7 +2,7 @@ name: playwright-es-modules-babel-jest-assert
 'on':
   push: null
   schedule:
-    - cron: 50 2 1-31/2 * *
+    - cron: 0 0 1-31/2 * *
 jobs:
   build:
     runs-on: ubuntu-latest
