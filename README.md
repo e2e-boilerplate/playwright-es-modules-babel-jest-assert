@@ -9,3 +9,6 @@ Playwright end-to-end test automation boilerplate, Using ES Modules, Babel, Jest
     	2. cd playwright-es-modules-babel-jest-assert
     	3. npm install
     	4. npm run test
+        
+    
+For more boilerplate click [here](https://github.com/e2e-boilerplate/utils/blob/master/docs/implemented.md)
