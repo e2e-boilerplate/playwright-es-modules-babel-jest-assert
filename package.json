@@ -36,14 +36,15 @@
   "keywords": [
     "assert",
     "babel",
-    "boilerplate",
+    "es modules",
+    "jest",
+    "playwright",
     "e2e",
     "e2e tests",
-    "es modules",
-    "example",
+    "boilerplate",
     "integration test",
-    "jest",
-    "playwright"
+    "test automation",
+    "javascript"
   ],
   "license": "MIT",
   "lint-staged": {
