@@ -4,7 +4,7 @@
     "url": "https://github.com/e2e-boilerplate/playwright-es-modules-babel-jest-assert/issues"
   },
   "dependencies": {
-    "chromedriver": "81.0.0",
+    "chromedriver": "83.0.0",
     "jest": "26.0.1",
     "playwright": "1.0.2"
   },
@@ -49,6 +49,7 @@
   "license": "MIT",
   "lint-staged": {
     "*.{js,json,md}": [
+      "eslint --fix",
       "prettier --write"
     ]
   },
