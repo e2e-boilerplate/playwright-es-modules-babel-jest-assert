@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "chromedriver": "85.0.1",
-    "jest": "26.5.0",
+    "jest": "26.5.2",
     "playwright": "1.4.2"
   },
   "description": "Playwright end-to-end test automation boilerplate. Using ES Modules, Babel, Jest and Assert.",
@@ -16,7 +16,7 @@
     "@babel/preset-env": "7.11.5",
     "@babel/register": "7.11.5",
     "@babel/runtime": "7.11.2",
-    "babel-jest": "26.5.0",
+    "babel-jest": "26.5.2",
     "eslint": "7.10.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-config-prettier": "6.12.0",
