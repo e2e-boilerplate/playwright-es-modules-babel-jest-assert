@@ -10,8 +10,8 @@
   },
   "description": "Playwright end-to-end test automation boilerplate. Using ES Modules, Babel, Jest and Assert.",
   "devDependencies": {
-    "@babel/cli": "7.17.0",
-    "@babel/core": "7.17.2",
+    "@babel/cli": "7.17.3",
+    "@babel/core": "7.17.3",
     "@babel/plugin-transform-runtime": "7.17.0",
     "@babel/preset-env": "7.16.11",
     "@babel/register": "7.17.0",
